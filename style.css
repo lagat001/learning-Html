@@ -1,0 +1,93 @@
+
+*{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 13px 4%;
+}
+.nav li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.nav li a{
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.nav li a:hover{
+    color: green;
+}
+.logo a{
+    font-size: 25px;
+    font-weight: bolder;
+    color: gold;
+}
+.logo a span{
+    color: tomato;
+}
+.search{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search input {
+    height: 30px;
+    border-radius: 30px;
+    padding-left: 8px;
+}
+.search i{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
+
+/* register */
+body{
+    height: 100vh;
+    background: hsl(0,0% ,96% );
+}
+.container{
+    width: 350px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    padding: 10px ;
+    background: linear-gradient(rgb(97, 173, 184),#ffedcc);
+    box-shadow:2px 2px 10px black;
+    border-radius: 2px 38px 2px 38px;
+    
+}
+.container input{
+    width: 100%;
+    height: 40px;
+    margin: 6px 0;
+    border-radius: 5px;
+    padding-left:5px ;
+ 
+}
+.container h1{
+    text-align: center;
+    color: #555;
+    position: relative;
+}
+.container h1::after{
+    content: '';
+    background: tomato;
+    width: 70px;
+    height: 5px;
+    border-radius: 4px;
+    left: 50%;
+    bottom: -4px;
+    position: absolute;
+    transform: translateX(-50%);
+}
